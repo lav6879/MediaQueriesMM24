@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-display: inline-block;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+  background-color: #F8F1F0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(3, auto); /* You can adjust the row height as needed */
+  gap: 10px;
+}
+
+.item {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+#gallerypics{
+  border-radius: 30px;
+}
+
+.mainGridContainer {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div2 { 
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+.div3 { 
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
+.div4{
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+.div5{
+  padding-top: 8vh;
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+.div6{
+  grid-column-start: 0;
+  grid-column-end: 4;
+}
+.div7{
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.div8{
+  grid-column-start: 9;
+  grid-column-end: 9;
+  grid-row-start: 1;  
+}
+.div9{
+  grid-column-start: 1;
+  grid-column-end: 7; 
+
+}
+.div11{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row: 1;
+  text-align: center;
+  padding-left: 9vh;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  text-align: right;
+  min-height: 14vh;
+  background-color: #204C73;
+  font-family: "Ojuju", sans-serif;
+  font-weight: 400;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #F8F1F0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 550;
+  font-size: 18px;
+  padding: 20px 20px;
+
+}
+
+.nav-links a:hover:not(.active) {
+  color: #7A6564;
+}
+p{
+  text-align: center;
+}
+
+p1 {
+  letter-spacing: 1vh;
+  line-height: 4vh;
+  color: #F8F1F0;
+  text-align: left;
+  padding-left: 5vmin;
+  font-size: 18px;
+}
+h1{
+  text-align: center;
+  font-family: "Ojuju", sans-serif;
+  font-color: #2A221F;
+  font-weight: 400;
+  padding-top: 5vh;
+  font-size: 55px;
+  display: inline-block;
+}
+
+p{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Joan", sans-serif;
+  font-size: 24px;
+  color: #2A221F;
+  font-kerning: none;
+  margin-block: 20px;
+}
+iframe{
+  display: block;
+  margin: 0 auto;
+  background-image: url('https://eatbrave.co/cdn/shop/files/OAT_CARD_1_1.png?v=1646654951');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+#makeup{
+  width: 100%;
+}
+.setimages img{
+  display: inline-block;
+}
+.grid {                                         
+  padding-left: 0px;
+  padding-top: 50px;
+  justify-content: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+#gallerypics{
+  border-radius: 30px;
+}
+.cell {
+  object-fit: contain; 
+  flex: 0 0 30%;                       
+  margin-bottom: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.cellfinal{
+  object-fit: contain;                     
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gridmain {                                         
+  justify-content: space-between;
+}
+.cellmain{
+  flex: 0 0 32%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+}
+
+#gallerypics:hover{
+  filter: opacity(50%);
+}
+
+.grid a:focus + .lightbox {
+    display: block;
+}
+
