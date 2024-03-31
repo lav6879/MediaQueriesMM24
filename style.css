@@ -16,24 +16,24 @@ body, html {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(3, auto); /* You can adjust the row height as needed */
-  gap: 10px;
+  gap: 1.5vw;
 }
 
 .item {
   background-color: #eee;
-  padding: 20px;
+  padding: 4vmin;
   text-align: center;
 }
 
 #gallerypics{
-  border-radius: 30px;
+  border-radius: 6.25vh;
 }
 
 .mainGridContainer {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0vw;
+  grid-row-gap: 0vw;
 }
 
 .div2 { 
@@ -43,7 +43,9 @@ body, html {
 .div3 { 
   grid-column-start: 1;
   grid-column-end: 10;
+  object-fit: contain;
 }
+
 .div4{
   grid-column-start: 6;
   grid-column-end: 10;
@@ -78,11 +80,14 @@ body, html {
   text-align: center;
   padding-left: 9vh;
 }
+.altnav{
+  display: none;
+}
 .nav {
   display: flex;
   width: 100%;
   text-align: right;
-  min-height: 14vh;
+
   background-color: #204C73;
   font-family: "Ojuju", sans-serif;
   font-weight: 400;
@@ -92,8 +97,8 @@ body, html {
 
 .nav-links {
   width: 100%;
-  padding-top: 20px;
-  padding-left: 50px;
+  padding-top: 4.2vh;
+  padding-left: 10.4vh;
 }
 
 .nav-links li {
@@ -105,7 +110,7 @@ body, html {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 550;
-  font-size: 18px;
+  font-size: 3vmin;
   padding: 20px 20px;
 
 }
@@ -113,8 +118,10 @@ body, html {
 .nav-links a:hover:not(.active) {
   color: #7A6564;
 }
+
 p{
   text-align: center;
+  font-size: 3vmin;
 }
 
 p1 {
@@ -123,7 +130,7 @@ p1 {
   color: #F8F1F0;
   text-align: left;
   padding-left: 5vmin;
-  font-size: 18px;
+  font-size: 3vmin;
 }
 h1{
   text-align: center;
@@ -131,10 +138,19 @@ h1{
   font-color: #2A221F;
   font-weight: 400;
   padding-top: 5vh;
-  font-size: 55px;
+  font-size: 10vmin;
   display: inline-block;
 }
-
+h2{
+  width: 100%;
+  text-align: center;
+  font-family: "Ojuju", sans-serif;
+  font-color: #2A221F;
+  font-weight: 400;
+  padding-top: 5vh;
+  font-size: 10vmin;
+  display: inline-block;
+}
 p{
   display: flex;
   flex-direction: column;
@@ -214,20 +230,20 @@ div.desc {
 }
 
 .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .lightbox img {
-    display: block;
-    margin: auto;
-    max-width: 90%;
-    max-height: 90%;
-    margin-top: 5%;
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 5%;
 }
 
 #gallerypics:hover{
@@ -238,3 +254,106 @@ div.desc {
     display: block;
 }
 
+
+@media only screen and (max-width: 480px) {
+.nav {
+  display: none;
+}
+.altnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #204C73;
+  font-family: "Ojuju", sans-serif;
+  font-weight: 400;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding:0;
+}
+
+.altnav p1 {
+  line-height: 1.5;
+  font-size: 20px;
+  color: #F8F1F0;
+  margin-bottom: 2px;
+  padding-left: 1vmin;
+  text-align: center;
+}
+
+.altnav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.altnav-links a {
+  color: #F8F1F0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 550;
+  font-size: 16px;
+}
+
+.mainGridContainer {
+  grid-template-columns: 1fr;
+}
+
+.div4, {
+  grid-column-start: span 1;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+center img {
+  width: 80%;
+  height: auto;
+}
+
+#logo{
+  width: 30%;
+}
+
+#johng{
+  grid-column-start: 1;
+  grid-column-end: 10;
+  object-fit: contain;
+}
+
+.div5{
+  grid-column-start: 2;
+  grid-column-end: 9;
+  padding-top: 0;
+}
+
+.div8{
+  display: none;
+}
+
+.div11{
+  grid-column-start: 1;
+  padding-left: 0;
+}
+
+
+
+  
